@@ -7,6 +7,7 @@ SELECT
 		 'SWAPS' usrName,
 		 'XXX' AS estadoNombre,
 		 'SHORTFALL' shortfall,
+		 "LO AGREGP" texto,
 		IF(DATEDIFF(MAX(LastDay), a.AGR_Dstart) <= 0, 1, DATEDIFF(MAX(LastDay), a.AGR_Dstart) / DATEDIFF(a.AGR_Dend, a.AGR_Dstart)) as ProgressTime, 
 		MAX(LastDay) LastDay,
 		SUM(BCMargen) BCMargen,
